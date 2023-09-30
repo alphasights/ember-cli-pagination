@@ -1,0 +1,11 @@
+{{#if rowMode}}
+  {{#each obj in pagedContent}}
+    {{#with obj}}
+      {{yield}}
+    {{/with}}
+  {{/each}}
+{{else}}
+  {{yield}}
+{{/if}}
+
+{{page-numbers-inner content=pagedContent action="pageClicked"}}

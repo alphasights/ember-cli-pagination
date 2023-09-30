@@ -1,0 +1,10 @@
+{{#paged-infinite content=content page=page}}
+  {{#each pagedContent}}
+    <div class="todo">
+      <span>{{name}}</span>
+      <span>
+        {{input type="checkbox" checked=completed}}
+      </span>
+    </div>
+  {{/each}}
+{{/paged-infinite}}
